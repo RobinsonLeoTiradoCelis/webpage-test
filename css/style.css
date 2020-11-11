@@ -1,0 +1,419 @@
+html,
+body,
+.view {
+  height: 100%; }
+
+
+body{
+  font-family: Cambria;
+ /*  background-color: #79a1a5; */
+
+}
+
+.logo{
+
+  width:15rem;
+   height:4.5rem;
+   margin-left: -0.5em;
+}
+
+.carousel {
+  height: 70%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+/*   background-color: rgba(9, 112, 69, 0.2); */
+ }
+
+.top-nav-collapse {
+/*   background-color: #929FBA; */
+  background-color: #3d838b;
+  /* color:black ;*/
+}
+
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,.5);
+  border-color: rgb(255, 255, 255,0.5);
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.navbar .navbar-toggler {
+  border-width: 1px;
+  outline: 0;
+}
+
+body {
+  background-color: #f9f9fa
+}
+
+
+
+.container-component h1 {
+font-size: 40px;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 40px;
+font-weight: bold;
+color: #19D28F;
+}
+.container-component {
+padding-top: 8%;
+}
+.single-team {
+position: relative;
+overflow: hidden;
+margin-bottom: 10px;
+perspective: 1000px;
+-webkit-perspective: 1000px;
+}
+.team-img {
+width: 100%;
+height: 250px;
+padding: 20px;
+text-align: center;
+transition: all .5s ease;
+}
+.one {
+background-image: url(../img/a1.jpg);
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center center;
+}
+.two {
+background-image: url(../img/a2.jpg);
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center center;
+}
+.three {
+background-image: url(../img/a3.jpg);
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center center;
+}
+.team-text {
+position: absolute;
+width: 100%;
+height: 250px;
+padding: 20px;
+text-align: center;
+transition: all .5s ease;
+top: 0;
+left: 0;
+z-index: 1;
+opacity: 0;
+background-color: #141523;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+transform: translateX(110px) rotateY(-90deg);
+color: #19D28F;
+}
+.team-text h2 {
+text-transform: uppercase;
+font-weight: 700;
+}
+.team-text h4 {
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 300;
+}
+.team-text p {
+line-height: 2;
+}
+.img-area {
+position: relative;
+top: 80px;
+transform: translateX(-50%);
+}
+.single-team:hover .team-img {
+opacity: 0;
+transform: translateX(-110px) rotateY(90deg);
+}
+.single-team:hover .team-text {
+opacity: 1;
+transform: rotateY(0);
+}
+
+
+
+@media (max-width:991.98px) {
+  .padding {
+      padding: 1.5rem
+  }
+}
+
+@media (max-width:767.98px) {
+  .padding {
+      padding: 1rem
+  }
+}
+
+/* OVERTEXT */
+.heroOverlay {
+  z-index: 12;
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  right: 0px;
+  margin: auto auto 0 10%;
+  width: 80%;
+  background: rgba(240, 255, 255, .5);
+  padding: 30px 0;
+}
+
+.heroOverlay h1 {
+  font-size: 5.5vw;
+}
+
+.heroOverlay p {
+  font-size: 3vw;
+}
+
+.heroOverlay a {
+  font-size: 2vw;
+  padding: .5vw 1vw;
+}
+/* OVERTEXT */
+  
+/* footer */
+
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* Slider */
+
+
+
+
+
+
+.btn.btn-social-icon {
+  width: 50px;
+  height: 50px;
+  padding: 0
+}
+
+.btn.btn-rounded {
+  border-radius: 50px
+}
+
+
+.btn-facebook {
+  background: #3b579d;
+  color: #ffffff
+}
+
+.btn-youtube {
+  background: #e52d27;
+  color: #ffffff
+}
+
+.btn-twitter {
+  background: #2caae1;
+  color: #ffffff
+}
+
+.btn-dribbble {
+  background: #ea4c89;
+  color: #ffffff
+}
+
+.btn-linkedin {
+  background: #0177b5;
+  color: #ffffff
+}
+
+.btn-instagram {
+  background: #dc4a38;
+  color: #ffffff
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+  background: #2d4278;
+  color: #ffffff
+}
+
+.btn-youtube:hover,
+.btn-youtube:focus {
+  background: #c21d17;
+  color: #ffffff
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+  background: #1b8dbf;
+  color: #ffffff
+}
+
+.btn-dribbble:hover,
+.btn-dribbble:focus {
+  background: #e51e6b;
+  color: #ffffff
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus {
+  background: #015682;
+  color: #ffffff
+}
+
+.btn-instagram:hover,
+.btn-instagram:focus {
+  background: #bf3322;
+  color: #ffffff
+}
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 375px) {  /* 768 */
+  .navbar {
+    /* background-color: #1C2331;  */
+    background-color: #3d838b;
+
+  }
+  .navbar-brand{
+    padding: 0px;
+  }
+ 
+
+ .logo{
+
+  width:12rem;
+   height:3.5rem;
+   margin-left: -0.5em;
+}
+
+
+ }
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; 
+}
+
