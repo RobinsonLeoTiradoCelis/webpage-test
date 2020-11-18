@@ -1,20 +1,30 @@
 html,
 body,
 .view {
-  height: 100%; }
+  height: 100%; 
+ width: 100%;}
 
 
 body{
-  font-family: Cambria;
+  font-family: Arial;
  /*  background-color: #79a1a5; */
 
 }
 
 .logo{
 
-  width:15rem;
+  width:4.8rem;  /* 15rem */
    height:4.5rem;
-   margin-left: -0.5em;
+  /*  margin-left: -0.5em; */
+}
+
+
+.navbar .container .collapse .navbar-nav .nav-item .nav-link  {
+  font-weight: bolder;
+  text-decoration: none;
+  color:#0f1644;;
+  font-size: large;
+
 }
 
 .carousel {
@@ -26,14 +36,118 @@ body{
       height: 100%; }
 
 
+
+      .carousel-item .view .mask .fadeIn .mb-4 .azul{
+        color: #0f1644; 
+        font-size: larger;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+   }
+
+   .carousel-item .view .mask .fadeIn .mb-4 .verde{
+    color: #3d838b; 
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.carousel-item .view .mask .fadeIn .mb-4 .blanco{
+  color: #ffffff; 
+  font-size: larger;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.btn-inscripcion{
+ background-color: #3d838b;
+}
+
+
+.carousel-item .view .mask .verdetop{
+ margin-bottom: 5rem;
+}
+
+.nav-link-hover:hover{
+  color: white;
+
+}
+.encabezadoverde{
+  color: #3d838b; 
+
+
+}
+.center-m{
+  text-align: center;
+}
+
+.franjaicono{
+  width: 100%;
+  height: 10rem;
+  background-color: #dadada;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+/*   justify-content: center;
+  align-items: center;
+  display: flex;*/
+} 
+
+.mision{
+width: 100%;
+height:4rem;
+justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 2rem;
+}
+.misionh1{
+  color: #3d838b; 
+
+}
+.misiontexto{
+  width: 100%;
+  height:6rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.franjafrase{
+  width: 100%;
+  height: 10rem;
+  background-color: #06abc6;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenidotexto{
+  padding-top: 6rem;
+  padding-left: 6rem;
+}
+
+.encabezados{
+  text-align: center;
+}
+.encabezados2{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(219, 242, 255, 0.3);
+  /* box-shadow: 0 20px 20px rgba(0,0,0, .2); */
 /*   background-color: rgba(9, 112, 69, 0.2); */
  }
 
 .top-nav-collapse {
 /*   background-color: #929FBA; */
-  background-color: #3d838b;
+  background-color: rgb(61, 131, 139,1);
   /* color:black ;*/
 }
 
@@ -59,23 +173,14 @@ body {
 
 
 
-.container-component h1 {
-font-size: 40px;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 40px;
-font-weight: bold;
-color: #19D28F;
-}
-.container-component {
-padding-top: 8%;
-}
+
 .single-team {
 position: relative;
 overflow: hidden;
 margin-bottom: 10px;
 perspective: 1000px;
 -webkit-perspective: 1000px;
+box-shadow: 0 20px 20px rgba(0,0,0, .2);
 }
 .team-img {
 width: 100%;
@@ -118,7 +223,9 @@ backface-visibility: hidden;
 transform-style: preserve-3d;
 transform: translateX(110px) rotateY(-90deg);
 color: #19D28F;
+
 }
+
 .team-text h2 {
 text-transform: uppercase;
 font-weight: 700;
@@ -145,11 +252,166 @@ opacity: 1;
 transform: rotateY(0);
 }
 
+/* PRUEBNAS */
+.container2{
+  position: relative;
+  width: 85%;
+  margin: 2rem auto 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+.container2 .card{
+  position: relative;
+  width: 300px;
+  height: 440px;
+  background-color:#CCC;
+   overflow: hidden; 
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 0 auto;
 
+}
+
+.container2 .card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 20px 20px rgba(0,0,0, .2);
+}
+
+.container2 .card .img-box{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container2 .card:hover .img-box{
+
+  opacity: 1;
+}
+
+.container2 .card .img-box img{
+  width: 100%;
+}
+
+.container2 .card .content{
+
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.54s;
+  padding-top: 60px;
+}
+
+.container2 .card:hover .content{
+  bottom: 0;
+
+
+}
+
+.container2 .card:nth-child(1) .content{
+  background: linear-gradient(0deg, #c21833, transparent);
+}
+
+.container2 .card:nth-child(2) .content{
+  background: linear-gradient(0deg, #8012a5, transparent);
+}
+
+.container2 .card:nth-child(3) .content{
+  background: linear-gradient(0deg, #3a414c, transparent);
+}
+
+
+.container2 .card .content h2{
+
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.container2 .card .content h2 span{
+
+  color: #ffeb3b;
+  font-size: 16px;
+}
+
+.container2 .card .content p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container2 .card .content ul{
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 .card .content ul li{
+list-style:  none;
+}
+
+.container2 .card .content ul li a{
+ color: #fff;
+ padding: 0 10px;
+ font-size: 18px;
+ /* transition: 0.5s; */
+}
+
+/* ORUEBAS */
 
 @media (max-width:991.98px) {
   .padding {
       padding: 1.5rem
+  }
+  .carousel-item .view .mask .fadeIn .mb-4{
+    font-size: large;
+  }
+  .contenidotexto{
+   padding: 2rem;
+  }
+  .franjafraseh1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  }
+  
+  .view {
+    height: 100%; 
+   width: 100%;}
+  
+   .container{
+     padding-left: 4rem;
+     padding-right: 4rem;
+   }
+   .misionh1{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
+  .mision{
+
+      padding-top: 1rem;
+    }
+  .misiontextoh3{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #encabezadoconfere{
+    font-size: 2rem;
   }
 }
 
@@ -157,7 +419,85 @@ transform: rotateY(0);
   .padding {
       padding: 1rem
   }
+  .view {
+    height: 100%; 
+   width: 100%;}
+   .misionh1{
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+  .misionh1{
+    font-size: 1.1rem;
+    font-weight: bold;
+
+  }
+  .mision{
+
+      padding-top: 1rem;
+    }
+  .misiontextoh3{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
 }
+
+@media (max-width:499px) {
+  .padding {
+      padding: 1rem
+  }
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+  .view {
+    height: 100%; 
+   width: 100%;}
+   .misionh1{
+    font-size: 1rem;
+    font-weight: bold;
+
+  }
+  .mision{
+
+      padding-top: 1rem;
+    }
+  .misiontextoh3{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+
+@media (max-width:320px) {
+  .padding {
+      padding: 1rem
+  }
+  .navbar-toggler {
+    margin-right: 3rem;
+  }
+  .view {
+    height: 100%; 
+   width: 100%;}
+   .mision{
+
+    padding-top: 0.5rem;
+  }
+  .misionh1{
+    font-size: 1rem;
+    font-weight: bold;
+
+  }
+  .mision{
+
+      padding-top: 1rem;
+    }
+  .misiontextoh3{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
 
 /* OVERTEXT */
 .heroOverlay {
@@ -405,9 +745,9 @@ h2{
 
  .logo{
 
-  width:12rem;
+  width:3.8rem;
    height:3.5rem;
-   margin-left: -0.5em;
+  
 }
 
 
