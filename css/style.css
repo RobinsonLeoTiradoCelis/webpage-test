@@ -114,6 +114,14 @@ justify-content: center;
   padding: 1rem;
 }
 
+.hrencabezados{
+  height: 0.3rem;
+  background-color: black;
+  border: none;
+  border-radius: 0;
+}
+
+
 
 .franjafrase{
   width: 100%;
@@ -132,7 +140,12 @@ justify-content: center;
 }
 
 .encabezados{
+  padding-top: 4rem;
   text-align: center;
+}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
 }
 .encabezados2{
   text-align: center;
@@ -168,7 +181,7 @@ justify-content: center;
 }
 
 body {
-  background-color: #f9f9fa
+  background-color: white;
 }
 
 
@@ -755,5 +768,63 @@ h2{
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
   background-color: #1C2331; 
+}
+
+
+
+footer .main-footer{	padding: 20px 0;	background: #252525;  border-radius: 0;}
+footer ul{	padding-left: 0;	list-style: none;}
+
+/* Copy Right Footer */
+.footer-copyright {	background: #222;  border-radius: 0; height: 6rem;}
+
+.footer-copyright p {	color: #969696;	}
+
+
+
+/*==================== 
+	Widgets 
+====================== */
+.widget{	padding: 20px;	margin-bottom: 40px;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding-top: 3rem;	background-color: transparent;	margin-bottom: 40px;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget li a{	color:rgb(223, 219, 219);}
+.widget li a:hover{	color: #4b92dc;}
+.widget-title {margin-bottom: 20px; font-weight: bold;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 0.5rem;position: relative;width: 100%;}
+.widget .badge{	float: right;	background: #7f7f7f;}
+
+.thumb-content{
+  margin-top: 1rem;
+}
+
+.typo-light h1, 
+.typo-light h2, 
+.typo-light h3, 
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff;}
+
+
+.footer-social a {
+   display: inline-block;
+    margin-right: 20px; 
+    margin-bottom: 8px; 
+    color: #777; 
+    border: 0; 
+  }
+.footer-social a:hover, .footer-social a:focus { 
+  color: #aaa; 
+  border: 0; 
+}
+.footer-social i {
+   font-size: 24px; 
+  
 }
 
