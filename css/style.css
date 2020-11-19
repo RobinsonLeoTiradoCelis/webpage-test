@@ -73,10 +73,17 @@ body{
 
 }
 .encabezadoverde{
-  color: #3d838b; 
+/*   color: #3d838b;  */
+  color: #BEEBED; 
 
 
 }
+.encabezadoverdee{
+    color: #3d838b; 
+   /*  color: #BEEBED; 
+   */
+  
+  }
 .center-m{
   text-align: center;
 }
@@ -160,7 +167,8 @@ justify-content: center;
 
 .top-nav-collapse {
 /*   background-color: #929FBA; */
-  background-color: rgb(61, 131, 139,1);
+/*   background-color: rgb(61, 131, 139,1); */
+  background-color: #BEEBED;
   /* color:black ;*/
 }
 
@@ -748,7 +756,8 @@ h2{
 @media only screen and (max-width: 375px) {  /* 768 */
   .navbar {
     /* background-color: #1C2331;  */
-    background-color: #3d838b;
+   /*  background-color: #3d838b; */
+   background-color: #BEEBED;
 
   }
   .navbar-brand{
@@ -775,16 +784,14 @@ h2{
 footer .main-footer{	padding: 20px 0;	background: #252525;  border-radius: 0;}
 footer ul{	padding-left: 0;	list-style: none;}
 
-/* Copy Right Footer */
+
 .footer-copyright {	background: #222;  border-radius: 0; height: 6rem;}
 
 .footer-copyright p {	color: #969696;	}
 
 
 
-/*==================== 
-	Widgets 
-====================== */
+
 .widget{	padding: 20px;	margin-bottom: 40px;}
 .widget.widget-last{	margin-bottom: 0px;}
 .widget.no-box{	padding-top: 3rem;	background-color: transparent;	margin-bottom: 40px;
